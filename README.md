@@ -93,7 +93,7 @@ TaxTrack is a modern, full-stack billing and tax management application designed
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/miralhsn/TaxTrack
    cd TaxTrack/backend
    ```
 
@@ -269,10 +269,6 @@ TaxTrack/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
-
-For support, email support@taxtrack.com or create an issue in the repository.
-
 ## 🙏 Acknowledgments
 
 - React team for the amazing framework
@@ -281,8 +277,3 @@ For support, email support@taxtrack.com or create an issue in the repository.
 - All contributors and users
 
 ---
-
-<div align="center">
-  <p>Made with ❤️ by TaxTrack Team</p>
-  <p>Version 1.0.0</p>
-</div> 

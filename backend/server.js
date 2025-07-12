@@ -15,6 +15,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/clients', require('./routes/client'));
 app.use('/api/services', require('./routes/service'));
 app.use('/api/stats', require('./routes/stats'));
+app.use('/api/reminders', require('./routes/reminder'));
 app.get('/', (req, res) => {
   res.send('BillingApp API is running!');
 });

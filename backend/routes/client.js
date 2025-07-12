@@ -22,5 +22,7 @@ router.put('/:id', auth, clientController.updateClient);
 router.delete('/:id', auth, clientController.deleteClient);
 // Upload document
 router.post('/:id/upload', auth, upload.single('document'), clientController.uploadDocument);
+// Delete document
+router.delete('/:id/documents/:documentName', auth, clientController.deleteDocument);
 
 module.exports = router; 
