@@ -96,11 +96,14 @@ const SidePanel = () => {
       {/* Toggle Button */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed right-0 top-1/2 transform -translate-y-1/2 z-40 bg-blue-600 text-white p-2 rounded-l-lg shadow-lg hover:bg-blue-700 transition-colors"
+        className="fixed right-0 top-1/2 transform -translate-y-1/2 z-40 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-l-lg shadow-lg transition-all duration-200 border border-blue-500"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
+        aria-label="Toggle side panel"
       >
-        {isOpen ? <FaChevronRight /> : <FaChevronLeft />}
+        <div className="flex items-center justify-center">
+          {isOpen ? <FaChevronRight size={16} /> : <FaChevronLeft size={16} />}
+        </div>
       </motion.button>
 
       {/* Side Panel */}
@@ -120,9 +123,10 @@ const SidePanel = () => {
                 </h2>
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                  className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                  aria-label="Close side panel"
                 >
-                  <FaChevronRight />
+                  <FaChevronRight size={16} />
                 </button>
               </div>
 

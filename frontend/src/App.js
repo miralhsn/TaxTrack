@@ -15,7 +15,8 @@ import { PieChart, Pie, Cell, Tooltip, BarChart, Bar, XAxis, YAxis, ResponsiveCo
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import ReminderModal from './components/ReminderModal';
-import TestPDFButton from './components/TestPDFButton';
+import ThemeTest from './components/ThemeTest';
+
 
 function PrivateRoute({ children }) {
   const token = localStorage.getItem('token');
@@ -213,14 +214,16 @@ function Dashboard() {
       {/* Reminders Section */}
       <Reminders clients={clients} />
 
-      {/* Quick Actions */}
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 lg:p-6">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-          Quick Actions
-        </h3>
+              {/* Theme Test - Remove in production */}
+        <ThemeTest />
         
-        {/* PDF Test Button - Remove this in production */}
-        <TestPDFButton />
+        {/* Quick Actions */}
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 lg:p-6">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+            Quick Actions
+          </h3>
+        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link
             to="/clients"

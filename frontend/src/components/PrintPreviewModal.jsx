@@ -93,10 +93,10 @@ const PrintPreviewModal = ({ isOpen, onClose, service, client }) => {
               <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-6 mb-6">
                 <div className="text-center mb-6">
                   <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                    BillingApp
+                    TaxTrack
                   </h1>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Professional Billing & Tax Management
+                    Professional Tax & Billing Management
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-500">
                     123 Business Street, City, State 12345
@@ -190,7 +190,7 @@ const PrintPreviewModal = ({ isOpen, onClose, service, client }) => {
                 </div>
 
                 <div className="mt-6 text-center text-sm text-gray-500 dark:text-gray-400">
-                  <p>Thank you for choosing BillingApp for your professional needs.</p>
+                  <p>Thank you for choosing TaxTrack for your professional needs.</p>
                   <p className="mt-1">This is a computer-generated document.</p>
                 </div>
               </div>

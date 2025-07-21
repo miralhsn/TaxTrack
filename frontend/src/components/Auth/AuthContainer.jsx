@@ -34,7 +34,7 @@ export default function AuthContainer() {
           >
             <div className="mb-8">
               <FaChartLine className="text-6xl mb-4 mx-auto" />
-              <h1 className="text-4xl font-bold mb-4">BillingApp</h1>
+              <h1 className="text-4xl font-bold mb-4">TaxTrack</h1>
               <p className="text-xl text-blue-100">Professional Billing & Tax Management</p>
             </div>
 
